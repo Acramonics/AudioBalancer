@@ -10,6 +10,8 @@ a standalone device or as an add on to another circuit - the board has
 been designed to be as small as possible while using through-hole
 components.
 
+A -15V/0/+15V power supply is needed.
+
 The circuit uses the SSM2141P receiver and SSM2142P receiver. These
 are now end-of-life, but still quite easy to find quite cheaply.
 
