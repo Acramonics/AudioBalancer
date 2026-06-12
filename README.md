@@ -4,21 +4,26 @@ AudioBalancer
 Andrew Martin, acramonics, 2026
 -------------------------------
 
-AudioBalancer is a balanced line receiver to unbalanced and an unbalanced to balanced driver on a single board. This could be used as a standalone device or as an add on to another circuit - the baord has been designed to be as small as possible while using through-hole components.
+`AudioBalancer` is a balanced line receiver to unbalanced and an
+unbalanced to balanced driver on a single board. This could be used as
+a standalone device or as an add on to another circuit - the board has
+been designed to be as small as possible while using through-hole
+components.
 
-The circuit uses the SSM2141P receiver and SSM2142P receiver. These are now end-of-life, but still quite easy to find quite cheaply.
+The circuit uses the SSM2141P receiver and SSM2142P receiver. These
+are now end-of-life, but still quite easy to find quite cheaply.
 
 Both receiver and driver contain capacitors for decoupling 48V phantom
 power on the balanced connection protection for the chips if these are
 charged and the inputs are accidentally shorted to earth. See the
 [Phantom Menace](./docs/AES5335_48V_Phantom_Menace.pdf) document.
 
-| Components                   | Function            | Options              |
-| :--------------------------- | :------------------ | :------------------- |
-| (1) C3,C4,C13,C14            | HF coupling         | Omit if not needed   |
-| (2) C1,C2,C11,C12            | Phantom protection  | Bridge if not needed |
-| (3) D1,D2,D3,D4, D5,D6,D7,D8 | Short protection    | Omit if not needed   |
-| (4) R4,R5,R6,R7              | Short protection    | Omit if not needed   |
+|    | Components               | Value | Function            | Options              |
+| :- | :----------------------- | :---- | :------------------ | :------------------- |
+| 1  | C3,C4,C13,C14            | 10nF  | HF coupling         | Omit if not needed   |
+| 2  | C1,C2,C11,C12            | 47uF  | Phantom protection  | Bridge if not needed |
+| 3  | D1,D2,D3,D4, D5,D6,D7,D8 | SB160 | Short protection    | Omit if not needed   |
+| 4  | R4,R5,R6,R7              | 10K   | Short protection    | Omit if not needed   |
 
 1. The 10nF capacitors across the decoupling capacitors are to ensure
    a good high frequency response. Depending on your application these
