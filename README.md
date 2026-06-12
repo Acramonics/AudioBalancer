@@ -24,7 +24,7 @@ charged and the inputs are accidentally shorted to earth. See the
 | :- | :----------------------- | :---- | :------------------ | :------------------- |
 | 1  | C3,C4,C13,C14            | 10nF  | HF coupling         | Omit if not needed   |
 | 2  | C1,C2,C11,C12            | 47uF  | Phantom protection  | Bridge if not needed |
-| 3  | D1,D2,D3,D4, D5,D6,D7,D8 | SB160 | Short protection    | Omit if not needed   |
+| 3  | D1,D2,D3,D4,D5,D6,D7,D8  | SB160 | Short protection    | Omit if not needed   |
 | 4  | R4,R5,R6,R7              | 10K   | Short protection    | Omit if not needed   |
 
 1. The 10nF capacitors across the decoupling capacitors are to ensure
